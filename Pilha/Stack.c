@@ -14,6 +14,7 @@ void inicializar(Pilha *pilha){
 }
 
 int isEmpty(Pilha pilha){
+    
     if(pilha = NULL){
         return 1;
     }
@@ -23,10 +24,13 @@ int isEmpty(Pilha pilha){
 }
 
 int isFull(Pilha pilha){
+
     return 0;
+
 }
 
 void push(Pilha *pilha, int valor){
+
     TNoStack *novo;
     novo = (TNoStack* )malloc(sizeof(TNoStack));
     novo -> info = valor;
@@ -36,6 +40,7 @@ void push(Pilha *pilha, int valor){
 }
 
 int  pop(Pilha *pilha){
+
     TNoStack *aux;
     int num;
     aux = *pilha;
@@ -43,4 +48,5 @@ int  pop(Pilha *pilha){
     *pilha = aux->prox;
     free(aux);
     return num;
+
 }   
