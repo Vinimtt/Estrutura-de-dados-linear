@@ -3,8 +3,8 @@
 
 typedef struct no{
     int valor;
-    No * prox;
-    No * ant;
+    struct no * prox;
+    struct no * ant;
 }No;
 
 typedef struct lista{
